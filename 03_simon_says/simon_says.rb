@@ -20,12 +20,13 @@ def first_word(word)
 end
 
 def titleize(word)
-# arr = word.split(" ")
-# if word =~ /[A-Z]/
-#   word.downcase
+arr = word.split(" ")
+if word =~ /[A-Z]/
+  word.downcase
 # else
 #   if arr.length > 3
-word.split(/(\W)/).map(&:capitalize).join
+end
+
 
 
 end
