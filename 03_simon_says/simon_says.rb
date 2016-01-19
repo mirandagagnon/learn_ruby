@@ -20,13 +20,15 @@ def first_word(word)
 end
 
 def titleize(word)
-arr = word.split(" ")
-if word =~ /[A-Z]/
-  word.downcase
-# else
-#   if arr.length > 3
+word.capitalize!
+words = word.split
+words.each do |wor|
+  if wor != "over"
+    wor.length > 3 ? wor.capitalize! : wor
+  else
+     wor
+  end
 end
-
-
+words.join(' ')
 
 end
