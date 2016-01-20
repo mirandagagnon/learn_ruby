@@ -1,5 +1,5 @@
 class Friend
-def greet (name = nil)
+def greet (name = "")
   "Hello #{name}!"
 end
 end
